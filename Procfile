@@ -1,1 +1,1 @@
-web: gunicorn heartcare.wsgi
+web: gunicorn heartcare.wsgi.application
