@@ -1,4 +1,4 @@
-Django
-Pillow
+django
+pillow
 gunicorn
 psycopg2
