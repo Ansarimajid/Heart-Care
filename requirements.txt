@@ -1,3 +1,4 @@
 Django
 Pillow
 gunicorn
+psycopg2
