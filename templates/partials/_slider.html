@@ -1,7 +1,7 @@
 {% load static %}
 <div class="main-slider">
     <div id="main-slider" class="owl-carousel owl-theme">
-<!--       {% for slider in sliders %} -->
+      {% for slider in sliders %}
       <div class="item">
           <div class="slide-caption slide-2">
             <div class="container">
@@ -12,6 +12,6 @@
           </div>
           <span class="simg"><img src="{{ slider.image.url }}" alt=""></span>
         </div>
-<!--       {% endfor %} -->
+      {% endfor %}
     </div>
   </div>
