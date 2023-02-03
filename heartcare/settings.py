@@ -78,12 +78,19 @@ WSGI_APPLICATION = 'heartcare.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# To use Neon with Django, you have to create a Project on Neon and specify the project connection settings in your settings.py in the same way as for standalone Postgres.
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'neondb',
+    'USER': 'alphlee67',
+    'PASSWORD': 'mazzy-87',
+    'HOST': 'ep-quiet-sunset-304822.ap-southeast-1.aws.neon.tech',
+    'PORT': '5432',
+  }
 }
+
 
 
 # Password validation
