@@ -1,4 +1,3 @@
 Django
 Pillow
 gunicorn
-db-sqlite3
