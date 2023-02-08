@@ -2,3 +2,4 @@ django
 pillow
 gunicorn
 psycopg2-binary
+whitenoise
