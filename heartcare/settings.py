@@ -27,7 +27,7 @@ SECRET_KEY = '2y3*%r@d)w5+9@*)i3tdar5q)=^rl^o@zii7)3m4#l^xmr&cqt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['heart.up.railway.app']
+ALLOWED_HOSTS = ["heart.up.railway.app"]
 
 
 # Application definition
@@ -81,14 +81,10 @@ WSGI_APPLICATION = 'heartcare.wsgi.application'
 # To use Neon with Django, you have to create a Project on Neon and specify the project connection settings in your settings.py in the same way as for standalone Postgres.
 
 DATABASES = {
-  'default': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'neondb',
-    'USER': 'alphlee67',
-    'PASSWORD': 'mazzy-87',
-    'HOST': 'ep-quiet-sunset-304822.ap-southeast-1.aws.neon.tech',
-    'PORT': '5432',
-  }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
+    }
 }
 
 
