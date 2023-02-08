@@ -1,5 +1,8 @@
 from django.urls import path
 from . import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('', views.HomeView.as_view(), name='index'),
@@ -13,3 +16,5 @@ urlpatterns = [
     path('gallery/', views.GalleryListView.as_view(), name="gallery"),
     path('contact/', views.ContactView.as_view(), name="contact")
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
