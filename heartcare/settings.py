@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'appointment',
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://heart.up.railway.app/']
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
