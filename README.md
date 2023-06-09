@@ -10,8 +10,8 @@ The Heart Care Django Project is a web application designed for heart disease ho
 
 To run the Heart Care Django Project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/heart-care-django.git`
-2. Navigate to the project directory: `cd heart-care-django`
+1. Clone the repository: `git clone https://github.com/Ansarimajid/Heart-Care.git`
+2. Navigate to the project directory: `cd Heart-Care`
 3. (Optional) Create and activate a virtual environment: `python3 -m venv myenv` and `source myenv/bin/activate`
 4. Install the required dependencies: `pip install -r requirements.txt`
 5. Set up the database by running migrations: `python manage.py migrate`
@@ -23,9 +23,9 @@ Note: Make sure you have Python and Django installed on your system before proce
 
 ## Usage
 
-Once the application is running, you can access the different features by navigating through the user interface. The application provides a user-friendly interface for managing patient records, scheduling appointments, recording medical tests, and generating reports.
+Once the application is running, you can access the different features by navigating through the user interface. The application provides a user-friendly interface for scheduling appointments.
 
-The admin panel can be accessed at `http://localhost:8000/admin`, where you can manage user accounts, permissions, and other administrative tasks.
+The admin panel can be accessed at `http://localhost:8000/admin`, where you can manage administrative tasks.
 
 ## Contributing
 
